@@ -10,9 +10,12 @@ body {
   padding: 50px;
 }
 
-.card {
-  width: 600px auto;
+.shadow {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
+}
+
+.card {
+  width: auto;
   padding: 70px 40px;
 }
 
@@ -46,4 +49,26 @@ body {
   line-height: 1.8em;
   color: #666;
   margin-bottom: 50px;
+}
+
+.link {
+  color: blue;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+#contact_btn {
+  display: inline-block;
+  color: #444;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: black 1px solid;
+}
+
+#contact_btn:hover {
+  background-color: steelblue;
+  color: white;
 }
