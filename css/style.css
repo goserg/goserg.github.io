@@ -1,3 +1,14 @@
+:root {
+  --main-bg-color: white;
+  --border-color: #F4F4F4;
+  --text-color: #14171A;
+  --caption-color: black;
+  --link-color: #1B95E0;
+  --btn-color: #1DA1F2;
+  --btn-bg-color: #E8F5FE;
+
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,31 +16,39 @@
 }
 
 body {
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   padding: 50px;
+  background-color:var(--main-bg-color);
 }
 
-.shadow {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
+.border {
+  border: solid;
+  border-width: 2px;
+  border-color: var(--border-color);
 }
 
 .card {
-  width: auto;
+  background-color: var(--main-bg-color);
+  margin: auto;
+  max-width: 900px;
   padding: 70px 40px;
 }
 
 .name {
-  font-size: 35px;
+  font-family: 'Merriweather', serif;
+  font-size: 50px;
   font-weight: 700;
-  color: #444;
+  color: var(--caption-color);
 }
 
 .ocupation {
-  font-size: 14px;
-  color: SteelBlue;
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--text-color);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 50px;
 }
 
@@ -38,22 +57,24 @@ body {
 }
 
 .caption {
-  font-size: 14px;
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  font-weight: 900;
   line-height: 1.8em;
-  color: SteelBlue;
-  margin-bottom: 15px;
+  color: var(--caption-color);
 }
 
 .regular {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.8em;
-  color: #666;
+  color: var(--text-color);
   margin-bottom: 50px;
 }
 
 .link {
-  color: blue;
+  color: var(--link-color);
   text-decoration: none;
+  font-weight: 900;
 }
 
 .link:hover {
@@ -61,14 +82,24 @@ body {
 }
 
 #contact_btn {
+  font-size: 20px;
+  font-weight: 900;
   display: inline-block;
-  color: #444;
+  color: var(--btn-color);
+  background-color: var(--main-bg-color);
   text-decoration: none;
   padding: 1rem 2rem;
-  border: black 1px solid;
+  border: 1px solid;
+  border-radius: 60px;
 }
 
 #contact_btn:hover {
-  background-color: steelblue;
-  color: white;
+  background-color: var(--btn-bg-color);
+}
+
+.bottom {
+  font-size: 10;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 100px;
 }
