@@ -18,13 +18,13 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  padding: 50px;
+  padding: 3rem;
   background-color:var(--main-bg-color);
 }
 
 .border {
   border: solid;
-  border-width: 2px;
+  border-width: 0.2rem;
   border-color: var(--border-color);
 }
 
@@ -32,43 +32,43 @@ body {
   background-color: var(--main-bg-color);
   margin: auto;
   max-width: 900px;
-  padding: 70px 40px;
+  padding: 4rem 2rem;
 }
 
 .name {
   font-family: 'Merriweather', serif;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--caption-color);
 }
 
 .ocupation {
   font-family: 'Merriweather', serif;
-  font-size: 25px;
+  font-size: 1rem;
   font-weight: 900;
   color: var(--text-color);
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 50px;
+  letter-spacing: 0.4rem;
+  margin-bottom: 3rem;
 }
 
 .img-container {
-  margin-bottom: 50px
+  margin-bottom: 3rem;
 }
 
 .caption {
   font-family: 'Merriweather', serif;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 900;
   line-height: 1.8em;
   color: var(--caption-color);
 }
 
 .regular {
-  font-size: 20px;
-  line-height: 1.8em;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
   color: var(--text-color);
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
 .link {
@@ -82,15 +82,15 @@ body {
 }
 
 #contact_btn {
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 900;
   display: inline-block;
   color: var(--btn-color);
   background-color: var(--main-bg-color);
   text-decoration: none;
   padding: 1rem 2rem;
-  border: 1px solid;
-  border-radius: 60px;
+  border: 0.05rem solid;
+  border-radius: 2rem;
 }
 
 #contact_btn:hover {
@@ -101,5 +101,5 @@ body {
   font-size: 10;
   color: var(--text-color);
   text-align: center;
-  margin-top: 100px;
+  margin-top: 7rem;
 }
