@@ -3,23 +3,15 @@
   --border-color: #F4F4F4;
   --text-color: #14171A;
   --caption-color: black;
-  --link-color: #1B95E0;
-  --btn-color: #1DA1F2;
+  --link-color: #157EFB;
+  --btn-color: #157EFB;
   --btn-bg-color: #E8F5FE;
-
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
-}
-
-img {
-  display: inline-block;
-  max-width: 100%;
-  min-width: 100%;
-  margin: auto;
-  margin-bottom: 3em;
+  font-size: 1.3rem;
 }
 
 header {
@@ -28,7 +20,7 @@ header {
   padding-left: 1rem;
   padding-top: 1rem;
   background-color: var(--border-color);
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
   margin-bottom: 1.5rem;
 }
@@ -48,7 +40,6 @@ body {
   font-weight: 400;
   padding: 0rem 2rem 2rem 3rem;
   background-color:var(--main-bg-color);
-  font-size: 1.3rem;
 }
 
 .border {
@@ -68,7 +59,7 @@ body {
 .name {
   font-family: 'Merriweather', serif;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--caption-color);
 }
@@ -79,7 +70,7 @@ body {
   font-size: 1rem;
   font-weight: 900;
   color: var(--text-color);
-  text-transform: uppercase;
+  font-variant: small-caps;
   letter-spacing: 0.4rem;
   margin-bottom: 3rem;
 }
@@ -93,12 +84,14 @@ body {
 }
 
 .regular {
+  margin-left: 1rem;
   line-height: 2rem;
   color: var(--text-color);
   margin-bottom: 3rem;
 }
 
 .link {
+  font-family: 'Merriweather', serif;
   color: var(--link-color);
   text-decoration: none;
   font-weight: 900;
@@ -106,6 +99,21 @@ body {
 
 .link:hover {
   text-decoration: underline;
+}
+
+.pdf_button {
+  display: flex;
+  align-items: center;
+}
+
+.pdf_logo {
+  display: inline-block;
+  min-width: 52px;
+  min-height: 52px;
+  background-image: url(/img/pdf.png);
+  background-size: 100%;
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
 .bottom {
@@ -125,10 +133,10 @@ body {
   }
 
   .name {
-    text-align: left;
+    text-align: center;
   }
 
   .ocupation {
-    text-align: left;
+    text-align: center;
   }
 }
