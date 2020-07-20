@@ -4,6 +4,7 @@
   --text-color: #14171A;
   --caption-color: black;
   --link-color: #157EFB;
+  --link-active: #FF005F;
   --btn-color: #157EFB;
   --btn-bg-color: #E8F5FE;
 }
@@ -11,7 +12,11 @@
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+
+*:focus {
+  outline: none;
 }
 
 header {
@@ -20,7 +25,7 @@ header {
   padding-left: 1rem;
   padding-top: 1rem;
   background-color: var(--border-color);
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   margin-bottom: 1.5rem;
 }
@@ -30,16 +35,26 @@ header {
 }
 
 .lang {
-  text-align: right;
-  flex-grow: 1;
+  margin-left: auto;
   margin-right: 1rem;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  padding: 0rem 2rem 2rem 3rem;
-  background-color:var(--main-bg-color);
+  padding: 0 2rem 2rem 3rem;
+  background-color:var(--border-color);
+  max-width: 1000px;
+  margin: auto;
+}
+
+img {
+  display: block;
+  max-height: 150px;
+  width: auto;
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .border {
@@ -48,18 +63,50 @@ body {
   border-color: var(--border-color);
 }
 
-.card {
+.main {
   background-color: var(--main-bg-color);
   margin: auto;
   margin-bottom: 1rem;
-  max-width: 900px;
   padding: 4rem 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background-color: var(--main-bg-color);
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.1s;
+  border: 4px solid var(--border-color);
+
+}
+
+.card .caption,
+.card .regular,
+.card li,
+.card a {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.card a {
+  display: block;
+  margin-top: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .name {
   font-family: 'Merriweather', serif;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--caption-color);
 }
@@ -79,13 +126,13 @@ body {
   font-family: 'Merriweather', serif;
   font-size: 1.3rem;
   font-weight: 900;
-  line-height: 1.8em;
+  line-height: 1.3em;
   color: var(--caption-color);
 }
 
 .regular {
   margin-left: 1rem;
-  line-height: 2rem;
+  line-height: 1.3em;
   color: var(--text-color);
   margin-bottom: 3rem;
 }
@@ -97,8 +144,10 @@ body {
   font-weight: 900;
 }
 
+.link:focus,
 .link:hover {
   text-decoration: underline;
+  text-decoration-color: var(--link-active)
 }
 
 .pdf_button {
@@ -117,26 +166,23 @@ body {
 }
 
 .bottom {
-  font-size: 10;
+  font-size: 1rem;
   color: var(--text-color);
   text-align: center;
   margin-top: 7rem;
 }
 
-@media only screen and (min-width: 750px) {
-  img {
-    display: block;
-    max-width: 100%;
-    min-width: 50%;
-    padding: 100px;
-    margin: auto;
+@media (max-width: 900px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  .name {
-    text-align: center;
-  }
 
-  .ocupation {
-    text-align: center;
+@media (max-width: 650px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
