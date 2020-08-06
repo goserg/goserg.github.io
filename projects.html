@@ -1,59 +1,74 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Резюме Горовова Сергея</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.2.min.js" integrity="sha384-ufR9RFnRs6lniiaFvtJziE0YeidtAgBRH6ux2oUItHw5WTvE1zuk9uzhUU/FJXDp" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        Bokeh.set_log_level("info");
-    </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Мои проекты</title>
   </head>
   <body>
-    <header>
-      <a href="about_me.html" class="link nav_button">Обо мне</a>
-      <a href="projects.html" class="link nav_button">Проекты</a>
-      <a href="projects_eng.html" class="link lang">
-        ENG
-      </a>
-    </header>
-    <div class="grid">
 
-      <div class="card">
-        <div>
-          <p class="caption">Tetris</p>
-          <img src="https://github.com/goserg/Tetris_pygame/blob/master/img/0.7-alpha_01.png?raw=true" alt="Tetris screenshot">
-          <p class="regular">Возможности:</p>
-          <ul class="regular">
-            <li>Поддержка контроллера XBOX 360</li>
-            <li>Несколько вариантов цветового оформления</li>
-            <li>Два варианта внешнего вида тайлов</li>
-            <li>Доска лидеров</li>
-            <li>Сохранение до 4 имён для быстрого выбора</li>
-          </ul>
-        </div>
-        <p class="regular"><a href="https://github.com/goserg/Tetris_pygame" class="link" target="_blank">Github репозиторий</a></p>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Горовов Сергей</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Обо мне<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link disabled" href="#">Проекты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contacts">Контакты</a>
+          </li>
+        </ul>
       </div>
+    </nav>
 
-      <div class="card">
-        <div>
-          <p class="caption">Text analyser (в разработке)</p>
-          <img src="https://github.com/goserg/text_analizer/blob/master/img/v0.1_screenshot.PNG?raw=true" alt="Text analyser screenshot">
-          <p class="regular"> Возможности: </p>
-          <ul class="regular">
-            <li>Использование Yandex mystem3</li>
-            <li>Анализ частоты встречаемости слов в тексте</li>
-            <li>Создание html кода интерактивной диаграммы</li>
-            <li>...в разработке</li>
-          </ul>
+    <div class="jumbotron d-flex flex-wrap justify-content-center">
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://github.com/goserg/Tetris_pygame/blob/master/img/0.7-alpha_01.png?raw=true" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tetris</h5>
+          <p class="card-text">
+            <ul>
+              <li>Поддержка контроллера XBOX 360</li>
+              <li>Несколько вариантов цветового оформления</li>
+              <li>Два варианта внешнего вида тайлов</li>
+              <li>Доска лидеров</li>
+              <li>Сохранение до 4 имён для быстрого выбора</li>
+            </ul>
+          </p>
+          <a href="https://github.com/goserg/Tetris_pygame" class="btn btn-primary">Github</a>
         </div>
-        <p class="regular"><a href="https://github.com/goserg/text_analizer" class="link" target="_blank">Github репозиторий</a></p>
       </div>
-
-      <div class="card">
-        <div>
-          <p class="caption">Python Data Structures</p>
+            <div class="card" style="width: 18rem;">
+        <img src="https://github.com/goserg/text_analizer/blob/master/img/v0.1_screenshot.PNG?raw=true" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Text analyser</h5>
+          <p class="card-text">
+            <ul class="regular">
+              <li>Использование Yandex mystem3</li>
+              <li>Анализ частоты встречаемости слов в тексте</li>
+              <li>Создание html кода интерактивной диаграммы</li>
+              <li>...в разработке</li>
+            </ul>
+          </p>
+          <a href="https://github.com/goserg/text_analizer" class="btn btn-primary">Github</a>
+        </div>
+      </div>
+        <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Python Data Structures</h5>
+          <p class="card-text">
           <p class="regular"> Учебный проект в котором я реализовал некоторые базовые структуры данных, такие как: </p>
           <ul class="regular">
             <li>Динамический массив</li>
@@ -63,21 +78,23 @@
             <li>Куча</li>
             <li>Хэш таблица</li>
           </ul>
-          <p class="regular"> Особенности: </p>
+          </p>
+                    <p class="regular"> Особенности: </p>
           <ul class="regular">
             <li>Тесты unittest</li>
             <li>Поддержка протокола изменяемых последовательностей</li>
             <li>Поддержка операторов []</li>
           </ul>
+          </p>
+          <a href="https://github.com/goserg/Python-Data-Structures" class="btn btn-primary">Github</a>
         </div>
-        <p class="regular"><a href="https://github.com/goserg/Python-Data-Structures" class="link" target="_blank">Github репозиторий</a></p>
       </div>
-
-      <div class="card">
-        <div>
-          <p class="caption">Sorting visualization</p>
-          <img src="https://github.com/goserg/Sorting_visualization/raw/master/img/shaker_sort.gif" alt="Sorting visualisation screenshot">
-          <p class="regular">Визуалтзация некоторых видов сотрировки с использованием модуля Pygame.<br><br>
+            <div class="card" style="width: 18rem;">
+        <img src="https://github.com/goserg/Sorting_visualization/raw/master/img/shaker_sort.gif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sorting visualization</h5>
+          <p class="card-text">
+            <p class="regular">Визуалтзация некоторых видов сотрировки с использованием модуля Pygame.<br><br>
             Виды сортировок: </p>
           <ul class="regular">
             <li>Сортировка пузырьком</li>
@@ -86,33 +103,41 @@
             <li>Сортировка выбором</li>
             <li>Сортировка вставками</li>
           </ul>
+          </p>
+          <a href="https://github.com/goserg/Sorting_visualization" class="btn btn-primary">Github</a>
         </div>
-        <p class="regular"><a href="https://github.com/goserg/Sorting_visualization" class="link" target="_blank">Github репозиторий</a></p>
       </div>
-
-      <div class="card">
-        <div>
-          <p class="caption">Code SpeedTest</p>
-          <img src="https://github.com/goserg/code_speed_test/raw/master/img/screenshot%20v0.1.png" alt="Code SpeedTest screenshot">
-          <p class="regular">Небольшой модуль для сравнения скорости работы алгоритмов с возможностью построения
+            <div class="card" style="width: 18rem;">
+        <img src="https://github.com/goserg/code_speed_test/raw/master/img/screenshot%20v0.1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Code SpeedTest</h5>
+          <p class="card-text">
+          Небольшой модуль для сравнения скорости работы алгоритмов с возможностью построения
             графика в MatPlotLib.
           </p>
+          <a href="https://github.com/goserg/code_speed_test" class="btn btn-primary">Github</a>
         </div>
-        <p class="regular"><a href="https://github.com/goserg/code_speed_test" class="link" target="_blank">Github репозиторий</a></p>
       </div>
-
-      <div class="card">
-        <div>
-          <p class="caption">JavaScript SimpleCalc</p>
-          <img src="https://github.com/goserg/SimpleCalc/raw/master/img/v0.1_screenshot.PNG" alt="SimpleCalc screenshot">
-          <p class="regular">Ознакомительный JavaScript/HTML/CSS проект.
-          </p>
+            <div class="card" style="width: 18rem;">
+        <img src="https://github.com/goserg/SimpleCalc/raw/master/img/v0.1_screenshot.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript SimpleCalc</h5>
+          <p class="card-text">Чистый JS/HTML/CSS</p>
+          <a href="https://github.com/goserg/SimpleCalc" class="btn btn-primary">Github</a>
+          <a href="https://goserg.github.io/SimpleCalc/index.html" class="btn btn-primary">Github pages</a>
         </div>
-        <p class="regular"><a href="https://github.com/goserg/SimpleCalc" class="link" target="_blank">Github репозиторий</a>
-          <a href="https://goserg.github.io/SimpleCalc/index.html" class="link" target="_blank">Github pages</a></p>
       </div>
 
     </div>
-    <div class="bottom">2020г.</div>
+
+    <div class="p-3 mb-2 text-center">
+    2020
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
