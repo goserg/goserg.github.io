@@ -5,6 +5,7 @@
       dense
       class="primary"
       dark
+      style="z-index: 1000"
     >
       <v-toolbar-title>
         {{ currentLocale.title }}
@@ -202,6 +203,9 @@
                 max-width="344"
                 tile
         >
+          <div style="position: absolute; z-index: 100;" v-if="project.inProgress">
+            {{currentLocale===localeRu ? 'В РАЗРАБОТКЕ' : 'WORK IN PROGRESS'}}
+          </div>
           <v-img v-if="project.img !== ''" :src="project.img" contain height="300px"></v-img>
           <v-card-title
                   class="primary mb-4 white--text"
@@ -294,6 +298,17 @@ export default {
       contacts: "Contacts",
     },
     projects: [
+      {
+        nameRu: "Магазин",
+        nameEn: "Shop",
+        textRu: "Учебный проект - магазин с использованием Vue CDN. Работает пагинация, поиск и фильтры по цене, бренду и т.д. (написано в Notepad++)",
+        textEn: "Study project - shop on Vue SDN. With pagination search and filters by price, brand etc. (written using Notepad++)",
+        img: "https://raw.githubusercontent.com/goserg/sa-shop/gh-pages/screenshots/v01.png",
+        github: "https://github.com/goserg/sa-shop",
+        page: "https://gorovov.ru/sa-shop/",
+        icons: ['mdi-language-javascript', 'mdi-vuejs', 'mdi-language-html5', 'mdi-language-css3'],
+        inProgress: true,
+      },
       {
         nameRu: "Крестики нолики",
         nameEn: "Tic tac toe",
