@@ -301,9 +301,13 @@ export default {
       {
         nameRu: "Магазин",
         nameEn: "Shop",
-        textRu: "Учебный проект - магазин с использованием Vue CDN. Работает пагинация, поиск и фильтры по цене, бренду и т.д. (написано в Notepad++)",
-        textEn: "Study project - shop on Vue SDN. With pagination search and filters by price, brand etc. (written using Notepad++)",
-        img: "https://raw.githubusercontent.com/goserg/sa-shop/gh-pages/screenshots/v01.png",
+        textRu: "Учебный проект - магазин с использованием Vue CDN. Работает добавление " +
+                "товара в корзину(и удаление), пагинация, поиск и фильтры по цене, бренду " +
+                "и т.д. (написано в Notepad++)",
+        textEn: "Study project - shop on Vue SDN. Working adding products to the cart(and " +
+                "removing) pagination, search and filtering by price, brand etc. " +
+                "(written using Notepad++)",
+        img: "https://raw.githubusercontent.com/goserg/sa-shop/gh-pages/screenshots/last.png",
         github: "https://github.com/goserg/sa-shop",
         page: "https://gorovov.ru/sa-shop/",
         icons: ['mdi-language-javascript', 'mdi-vuejs', 'mdi-language-html5', 'mdi-language-css3'],
