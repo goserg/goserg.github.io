@@ -127,7 +127,7 @@
             электровозов, разработка 3D моделей в CATIA, авторский надзор за производством.
           </p>
         </div>
-        <div v-if="currentLocale===localeEn"> <!--    АНГЛИЙСКАЯ ЛОКАЛИЗАЦИЯ    -->
+        <div lang="en" v-if="currentLocale===localeEn"> <!--    АНГЛИЙСКАЯ ЛОКАЛИЗАЦИЯ    -->
           <h1 class="text-h2 mt-10">Gorovov Sergey</h1>
           <h2 class="text-h5 mb-6 text--secondary font-weight-light">Junior programmer</h2>
           <p class="body-1">
@@ -298,6 +298,19 @@ export default {
       contacts: "Contacts",
     },
     projects: [
+      {
+        nameRu: "Фото альбом 2",
+        nameEn: "Photo album 2",
+        textRu: "Фотоальбом, с возможностью оставить комментарий (не сохраняется, только фронтенд), " +
+                "поддержка мобильной версии. Без использования библиотек компонентов. Протестировано на Firefox и Chrome",
+        textEn: "Photo album, commentary is working (without save, fromtend only), " +
+                "mobile support. No compopents libraries used. Tested on Firefox and Chrome",
+        img: "https://raw.githubusercontent.com/goserg/photo-album-2/master/screenshots/main.png",
+        github: "https://github.com/goserg/photo-album-2",
+        page: "https://gorovov.ru/photo-album-2/",
+        icons: ['mdi-language-javascript', 'mdi-vuejs', 'mdi-language-html5', 'mdi-language-css3'],
+        inProgress: false,
+      },
       {
         nameRu: "Магазин",
         nameEn: "Shop",
