@@ -77,7 +77,7 @@
             этому более основательно. Выбрал для старта языки программирования JavaScript
             и Python и делаю основной упор на их изучение, но не останавливаюсь только
             на этом. На данный момент мой самый крупный проект - реализация классической
-            игры Тетрис на Python. Его, а так же другие мои эксперименты можно посмотреть
+            игры Тетрис на Python. Его, а также другие мои эксперименты можно посмотреть
             в моем профиле на
             <v-hover v-slot:default="{ hover }">
               <a
@@ -98,7 +98,7 @@
           </p>
           <h3 class="text-h4 mt-10 mb-4">Технологии</h3>
           <p class="body-1">
-            JavaScript, Vue.JS, HTML/CSS, Python, ООП, Структуры данных, Git.
+            JavaScript, Vue.JS, React, HTML/CSS, Python, ООП, Структуры данных, Git.
           </p>
           <p class="body-1">
             Знаком, Go, Java, Bootstrap, Git Flow, PEP8, SQL, Design Patterns.
@@ -156,7 +156,7 @@
           </p>
           <h3 class="text-h4 mt-10 mb-4">Technologies</h3>
           <p class="body-1">
-            JavaScript, Vue.JS, HTML/CSS, Python, OOP, Data structures, Git.
+            JavaScript, Vue.JS, React, HTML/CSS, Python, OOP, Data structures, Git.
           </p>
           <p class="body-1">
             Familiar with Go, Java, Bootstrap, Git Flow, PEP8, SQL, Design Patterns.
@@ -298,6 +298,34 @@ export default {
       contacts: "Contacts",
     },
     projects: [
+      {
+        nameRu: "Кулинарная книга",
+        nameEn: "Cookbook",
+        textRu: "Простая кулинарная книга на Vue.js + Firebase backend. " +
+                "Авторизация через google, просмотр, добавление (после авторизации) рецептов, " +
+                "редактирование своих рецептов. Изучение возможностей Firebase. Не адаптировано для десктопа.",
+        textEn: "Simple cookbook via Vue.js + Firebase backend. " +
+                "Google authentication, viewing, adding (after logging in) recipes, " +
+                "editing your own recipes. Exploring Google Firebase. Not adapted for desktop",
+        img: "https://raw.githubusercontent.com/goserg/wehavetocook/master/screenshots/v1.png",
+        github: "https://github.com/goserg/wehavetocook",
+        page: "https://gorovov.ru/wehavetocook/",
+        icons: ['mdi-language-javascript', 'mdi-vuejs', 'mdi-google', 'mdi-language-html5', 'mdi-language-css3'],
+        inProgress: false,
+      },
+      {
+        nameRu: "Тестовое задание Funbox",
+        nameEn: "Funbox test",
+        textRu: "Тестовое задание на вакансию Frontend developer компании Funbox.ru. " +
+                "Адаптивность, поддержка Firefox, Opera, Chrome, IE11",
+        textEn: "Test task for Frontend developer position for Funbox.ru. " +
+                "Responsive design, Firefox, Opera, Chrome and IE11 support",
+        img: "https://raw.githubusercontent.com/goserg/funbox-test/master/screenshots/v1.png",
+        github: "https://github.com/goserg/funbox-test",
+        page: "https://gorovov.ru/funbox-test/",
+        icons: ['mdi-language-javascript', 'mdi-vuejs', 'mdi-language-html5', 'mdi-language-css3'],
+        inProgress: false,
+      },
       {
         nameRu: "Фото альбом 2",
         nameEn: "Photo album 2",
