@@ -73,12 +73,8 @@
           <h1 class="text-h2 mt-10">Горовов Сергей Николаевич</h1>
           <h2 class="text-h5 mb-6 text--secondary font-weight-light">Начинающий программист</h2>
           <p class="body-1">
-            Занимаюсь программированием как хобби уже давно, и теперь решил подойти к
-            этому более основательно. Выбрал для старта языки программирования JavaScript
-            и Python и делаю основной упор на их изучение, но не останавливаюсь только
-            на этом. На данный момент мой самый крупный проект - реализация классической
-            игры Тетрис на Python. Его, а также другие мои эксперименты можно посмотреть
-            в моем профиле на
+            Занимаюсь программированием уже долгое время. Люблю новые технологии, языки и фреймворки. Пишу на
+            JavaScript, Python и Go, но не останавливаюсь только на этом. На моем профиле в 
             <v-hover v-slot:default="{ hover }">
               <a
                       href="https://github.com/goserg"
@@ -94,14 +90,15 @@
                     @click="state=1"
                     :class="hover ? 'font-weight-bold' : 'text-decoration-none font-weight-bold'"
             >
-              проекты</a></v-hover>.
+              проекты</a></v-hover> можно посмотреть мои учебные и тестовые разработки, например странички на чистом JavaScript и на Vue.js,
+              игру тетрис на Python, сервер с бекендом на Django для записи денег прописью, API на Go + Postgresql и много других.
           </p>
           <h3 class="text-h4 mt-10 mb-4">Технологии</h3>
           <p class="body-1">
-            JavaScript, Vue.JS, React, HTML/CSS, Python, ООП, Структуры данных, Git.
+            JavaScript, Vue.JS, HTML/CSS, SCSS, Python, Django, Go, ООП, Структуры данных, Git, Postgresql, Docker.
           </p>
           <p class="body-1">
-            Знаком, Go, Java, Bootstrap, Git Flow, PEP8, SQL, Design Patterns.
+            Знаком так же с Haskell, Java, Bootstrap, React, Git Flow, PEP8, SQL, Design Patterns.
           </p>
           <h3 class="text-h4 mt-10 mb-4">Дополнительные навыки</h3>
           <p class="body-1">
@@ -131,12 +128,9 @@
           <h1 class="text-h2 mt-10">Gorovov Sergey</h1>
           <h2 class="text-h5 mb-6 text--secondary font-weight-light">Junior programmer</h2>
           <p class="body-1">
-            I am a hobbyist programmer, and I have decided to take a step towards
-            a programming career. I am working on learning JavaScript and Python programming
-            languages for the start and focusing mainly on exploring them,
-            but I am not stopping only at these languages.
-            At the moment my largest project is the realization of the classic Tetris
-            game on Python. You can check it out, as well as my other experiments on my
+            I have been programming for a long time. I love to learn new technologies, languages and frameworks.
+            I am coding in JavaScript, Python and Go, but I am not stopping only at these languages.
+            On my
             <v-hover v-slot:default="{ hover }">
               <a
                       href="https://github.com/goserg"
@@ -145,21 +139,23 @@
                 Github
               </a>
             </v-hover>
-            and on my
+            and at the
             <v-hover v-slot:default="{ hover }">
               <a
                       href="#"
                       @click="state=1"
                       :class="hover ? 'font-weight-bold' : 'text-decoration-none font-weight-bold'"
               >
-                projects</a></v-hover> section.
+                projects</a></v-hover> section you can see my academic and test projects
+                like web pages in vamila JS/HTML/CSS, Vue.js web pages, tetris game on Python, Django backend server for
+                numbers to words money converting, Go API with Postgres DB and Docker, and many others.
           </p>
           <h3 class="text-h4 mt-10 mb-4">Technologies</h3>
           <p class="body-1">
-            JavaScript, Vue.JS, React, HTML/CSS, Python, OOP, Data structures, Git.
+            JavaScript, Vue.JS, HTML/CSS, SCSS, Python, Django, Go, OOP, Data structures, Git, Postgresql, Docker.
           </p>
           <p class="body-1">
-            Familiar with Go, Java, Bootstrap, Git Flow, PEP8, SQL, Design Patterns.
+            Familiar with Haskell, Java, Bootstrap, React, Git Flow, PEP8, SQL, Design Patterns.
           </p>
           <h3 class="text-h4 mt-10 mb-4">Additional skills</h3>
           <p class="body-1">
@@ -298,6 +294,49 @@ export default {
       contacts: "Contacts",
     },
     projects: [
+      {
+        nameRu: "Микроблог на Go",
+        nameEn: "Go microblog",
+        textRu: "Микроблог с бекендом на Go, БД Postgres. Релизована регистрация и авторизация " +
+                "с помощью JWT токенов.",
+        textEn: "Microblog with Go backend and Postgres BD. Working registration and authorization " +
+                "with JWT tokens.",
+        img: "https://raw.githubusercontent.com/goserg/go-blog/main/img/sagdb_reg.gif",
+        github: "https://github.com/goserg/go-blog",
+        page: "https://sagdb.herokuapp.com/",
+        icons: ['mdi-language-go', 'mdi-database'],
+        inProgress: false,
+      },
+      {
+        nameRu: "Go merchant API",
+        nameEn: "Go merchant API",
+        textRu: "API для получения от поставщиков xlsx файлов, парсинга и добавления/обновления/поиска " +
+                "товаров в базе данных. Работает в синхронном и асинхронном режимах (предоставляет id задания " +
+                "по которому можно посмотреть результаты выполнения позже). Go, Postgres, Docker",
+        textEn: "API for sellers to parse xlsx files and adding/updating/serching " +
+                "goods at the data base. can operate in synchronous and asynchronous modes (returning task id " +
+                "which allows you to check results later). Go, Postgres, Docker",
+        img: "",
+        github: "https://github.com/goserg/Golang-merchant-API",
+        page: "",
+        icons: ['mdi-language-go', 'mdi-database', 'mdi-api', 'mdi-docker'],
+        inProgress: false,
+      },
+      {
+        nameRu: "Конвертатор денег в пропись",
+        nameEn: "Cookbook",
+        textRu: "Тестовое задание на вакансию python backend. " +
+                "Сервис для перевода денег из цифр в пропись с добавлением НДС. Парсер " +
+                "написан на python без использования библиотек. Покрытие тестами. Django + Sqlite3",
+        textEn: "Test task for python backend. " +
+                "Service for converting money from numbers to words, adding vat. Parser " +
+                "written in python without any libraries. Unit and functional tests. Django + Sqlite3",
+        img: "https://raw.githubusercontent.com/goserg/megafon-test/main/screenshots/v1.png",
+        github: "https://github.com/goserg/megafon-test",
+        page: "https://megafon-test.herokuapp.com/",
+        icons: ['mdi-language-python', 'mdi-language-html5', 'mdi-language-css3'],
+        inProgress: false,
+      },
       {
         nameRu: "Кулинарная книга",
         nameEn: "Cookbook",
